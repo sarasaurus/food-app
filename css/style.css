@@ -104,10 +104,10 @@ html {
       outline: thin red solid;
   }
   .stack{
+    display: flex;
       flex-direction: row;
   }
   .slider{
-    height: 700px;
     background-color:pink;
     flex: none;
   flex-wrap:nowrap;
