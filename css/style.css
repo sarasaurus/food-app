@@ -115,44 +115,7 @@ html {
   overflow-x:scroll;
     
   }
-  .recipe_card {
-  width:max-content;
-  background-color:yellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4px;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  margin: 0px 0px;
-  }
-  .recipe_text {
-  background-color:teal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px; 
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 10px 0px;
-  }
-  .recipe_rating {
-  background-color:coral;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 0px 0px; 
-  }
+  
 
 /**********pause**************/
 
@@ -216,6 +179,44 @@ input{
   .v_space_lg {}
   
   /*card specific*/
+  .card {
+    width:max-content;
+    background-color:yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 0px;
+    }
+    .card_text {
+    background-color:teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; 
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 0px;
+    }
+    .card_rating {
+    background-color:coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px; 
+    }
   .card_sm {}
   .card_md {}
   .card_lg {}
