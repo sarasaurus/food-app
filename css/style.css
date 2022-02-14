@@ -180,6 +180,7 @@ input{
   
   /*card specific*/
   .card {
+    position: relative;
     width:max-content;
     background-color:yellow;
     display: flex;
@@ -217,12 +218,36 @@ input{
     flex-grow: 0;
     margin: 0px 0px; 
     }
-  .card_sm {}
+    .card_category {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: absolute;
+      left:.75rem;
+      top:.75rem;
+    }
+    .card_category_icon {
+      margin-right: .75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height:30px;
+      width: 30px;
+      background-color:orange;
+      border-radius: 100%;
+    }
+  .card_sm {
+    display:flex;
+    flex-direction: row;
+  }
+
   .card_md {}
   .card_lg {}
   /*modifiers*/
 
-  
+
 /**********pause**************/
 
   /*desktop*/
