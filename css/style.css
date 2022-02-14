@@ -1,0 +1,313 @@
+/*mobile first*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+html {
+    font-size: 100%;
+  }
+  * { /*universal reset*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color:#222222;
+  }
+  /*responsive images*/
+  img {
+    width: 100%;
+    max-width: 100%;
+    height:auto;
+  }
+
+/**********pause**************/
+
+  /*typographic*/
+  h1 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.986rem;
+  }
+  
+  h2 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.728rem;
+  }
+  
+  h3 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.44rem;
+  }
+  h4 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.22rem;
+  }
+  h5 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.22rem;
+  }
+  h6 {
+  /*Your css here in rem. 1 rem=16px*/
+  }
+  p, a, input{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+/**********pause**************/
+
+  /* CSS modifiers */
+  /*presentational styles. Not required, use as needed*/
+  .author {/*styles the author name*/}
+  .date {/*styles the date*/}
+  .category {/*styles the category*/}
+  .caption {/*styles the caption*/}
+  .subhead {/*styles the subheadline*/}
+  .huge {/*size modifiers, as needed*/}
+  .tiny {/*size modifiers, as needed*/}
+  .light {/*light text on dark background, as needed*/}
+  .dark {/*dark text on light background, as needed*/}
+
+/**********pause**************/
+
+  /*structural*/
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .row {
+      width:100%;
+      background-color: pink;
+    display: flex;
+    flex-direction: column; /*column for mobile; will change to row for desktop*/
+  }
+  /*use the class of 'item' to organically subdivide into quarters thirds, halves, etc or use the explicitly defined quarters, thirds, halves, etc below But don't mix and match systems*/
+  
+  .item {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+      outline: thin red solid;
+  }
+  .stack{
+      flex-direction: row;
+  }
+  .slider{
+    height: 700px;
+    background-color:pink;
+    flex: none;
+  flex-wrap:nowrap;
+    white-space:nowrap;
+  overflow-x:auto;
+    
+  }
+  .recipe_card {
+  width:max-content;
+  background-color:yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 0px;
+  }
+  .recipe_text {
+  background-color:teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px; 
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 10px 0px;
+  }
+  .recipe_rating {
+  background-color:coral;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px; 
+  }
+
+/**********pause**************/
+
+  /*quarter, third, half, etc width 100%*/
+  /*Flex Container Modifiers*/
+  .full, .half, .third, .two_thirds, .quarter, .fifth, .three_quarters, .two_fifths, .three_fifths, .four_fifths {
+    width: 100%;
+    outline: thin blue solid;
+    display: flex;
+    /*centers all text*/
+    /* align-items: center;
+      justify-content: center;*/
+    flex-direction: column;
+    padding: .75rem;
+    align-items: center;
+  }
+  
+header {
+display: flex;
+flex-direction: column;
+padding:.75rem;
+align-items: flex-end;
+background-color: #B8CBBA;
+  }
+  header > .row {
+      align-items: center;
+  }
+nav .top{
+    display: flex;
+    flex-direction: column;  
+}
+nav > ul {
+    width:100%;
+}
+ul.top > li {
+    text-align: center;
+    width: 100%;
+    border:1px solid tomato;
+}
+.top > form {
+    align-self: center;
+}
+input{
+    padding: .3rem;
+}
+  footer {
+    background: #B8CBBA;
+  }
+  
+/**********pause**************/
+
+  /*modifiers*/
+  
+  .shadow {/*box shadow*/}
+  .rnd_crn {/*rounded corners*/}
+  .border_bottom {/* border bottom*/}
+  
+  /*vertical space*/
+  .v_space_sm {}
+  .v_space_md {}
+  .v_space_lg {}
+  
+  /*card specific*/
+  .card_sm {}
+  .card_md {}
+  .card_lg {}
+  /*modifiers*/
+
+  
+/**********pause**************/
+
+  /*desktop*/
+  @media (min-width:1101px) {
+    html {
+      font-size: 100%;
+    }
+    header, footer{
+    display: flex;
+    height:min-content;
+    }
+    header {
+        flex-direction: column;
+    }
+    nav .top{
+        flex-direction: row;
+        background-color: teal; 
+    }
+    nav > ul {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .top > form {
+        align-self: flex-end;
+    }
+    footer {
+        flex-direction: row;
+    }
+    
+    .container {
+      max-width: 1200px;
+      outline: thin grey solid;
+      margin: auto;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    height: 700px;
+    background-color:pink;
+    flex: none;
+  flex-wrap:nowrap;
+    white-space:nowrap;
+  overflow-x:auto;
+    
+  }
+    .full {
+      width: 100%;
+      
+    }
+    .half {
+      width: 50%;
+    }
+    .third {
+      width: 33.33%;
+    }
+    .two_thirds {
+      width: 66.66%;
+    }
+    .quarter {
+      width: 25%;
+    }
+    .three_quarters {
+      width: 75%;
+    }
+    .fifth {
+      width: 20%;
+    }
+    .two_fifths {
+      width: 40%;
+    }
+    .three_fifths {
+      width: 60%;
+    }
+    .four_fifths {
+      width: 80%;
+    }
+  }
+  
+  
