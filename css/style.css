@@ -105,14 +105,14 @@ html {
   }
   .stack{
     display: flex;
-      flex-direction: row;
+    flex-direction: row;
   }
   .slider{
     background-color:pink;
     flex: none;
   flex-wrap:nowrap;
     white-space:nowrap;
-  overflow-x:auto;
+  overflow-x:scroll;
     
   }
   .recipe_card {
@@ -268,15 +268,7 @@ input{
     display: flex;
     flex-direction: column;
 }
-.slider{
-    height: 700px;
-    background-color:pink;
-    flex: none;
-  flex-wrap:nowrap;
-    white-space:nowrap;
-  overflow-x:auto;
-    
-  }
+
     .full {
       width: 100%;
       
