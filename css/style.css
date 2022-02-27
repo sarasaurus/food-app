@@ -188,7 +188,6 @@ hr {
 header {
 display: flex;
 flex-direction: column;
-padding:.75rem;
 align-items: flex-end;
 background-color: #B8CBBA;
   }
