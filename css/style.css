@@ -68,6 +68,9 @@ html {
     font-weight: normal;
     font-size: 1rem;
   }
+  a:hover {
+    text-decoration: underline;
+  }
   .special {
     text-align: left;
     line-height: 2.5rem;
@@ -268,6 +271,9 @@ input {
      min-width: 100%;
     margin: 10px 0px;
     }
+    .card_text > a {
+      font-weight: bold;
+    }
     .card_rating {
     /* background-color:coral; */
     display: flex;
@@ -375,6 +381,7 @@ input {
       align-items: start;
     }
   .stack {
+    align-items: center;
     display: flex;
     flex-direction: column;
   }
