@@ -103,11 +103,12 @@ html {
     padding: 0.75rem;
       outline: thin red solid;
   }
-  .stack{
+  .recipe_collection > .stack{
     display: flex;
     flex-direction: row;
   }
   .slider{
+    width:inherit;
     background-color:pink;
     flex: none;
   flex-wrap:nowrap;
@@ -242,7 +243,10 @@ input{
     display:flex;
     flex-direction: row;
   }
-
+.ad {
+  width: 100%;
+  padding: 2rem 0px;
+}
   .card_md {}
   .card_lg {}
   /*modifiers*/
@@ -289,12 +293,22 @@ input{
     .row {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
-.stack {
+  .stack {
     display: flex;
     flex-direction: column;
-}
-
+  }
+  .recipe_collection > .stack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #general_recipes{
+    align-items: center;
+    justify-content: space-around;
+  }
     .full {
       width: 100%;
       
