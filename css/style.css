@@ -73,12 +73,19 @@ html {
   }
   .special {
     text-align: left;
-    line-height: 2.5rem;
-    font-size: 2.5rem;
+    line-height: 2.3rem;
+    font-size: 1.5rem;
     font-family: 'oi', cursive;
     font-weight: normal;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
   }
+
+	.featured-headline {
+	font-family: 'oi', cursive;
+	font-weight: normal;
+	letter-spacing: .1rem;
+	}
+
 hr {
   display: block;
   margin-top: 0.5rem;
@@ -168,7 +175,15 @@ hr {
 }
 .weekly_recipe_topic > .item {
   padding: 3rem;
-  background-color: #fff;
+}
+
+.article_text {
+	font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+	 line-break: auto;
+    line-height: 1.80647em;
 }
   
 
@@ -197,6 +212,8 @@ background-color: #B8CBBA;
   header > .row {
       align-items: center;
   }
+
+
 nav .top{
     display: flex;
     flex-direction: column;  
@@ -208,11 +225,14 @@ ul.top > li {
     text-align: center;
     width: 100%;
     margin: 1rem;
+	
     /* border:1px solid tomato; */
 }
 .top > form {
     align-self: center;
 }
+
+
 form {
   margin: .75rem;
   display: flex;
@@ -314,7 +334,7 @@ input {
     align-items: center;
   }
   .card_sm > img {
-    width: fit-content;
+    /*width: fit-content;*/
     height: fit-content;
   }
 
@@ -325,7 +345,32 @@ input {
 
   .card_md {}
   .card_lg {}
+
   /*modifiers*/
+
+ .hr-border {
+  	border: 1px solid black;
+  	width: 80%;
+	margin-bottom: 4%;
+    margin-top: 2%;
+	}
+
+.padding-ten-percent {
+	padding-left: 10%;
+	padding-right: 10%;
+	}
+.read-more {
+	font-weight: bold;
+	font-size: 1.1875rem;
+	line-height: 1.5rem;
+	text-decoration-line: underline;
+	align-self: flex-end;
+}
+
+.bold {
+	font-weight: bold;
+}
+
 
 
 /**********pause**************/
@@ -356,6 +401,7 @@ input {
     .top > form {
         align-self: flex-end;
     }
+	  
     footer {
         text-align: left;
         flex-direction: row;
@@ -374,6 +420,7 @@ input {
       max-width: 1200px;
       margin: auto;
     }
+	  
     .row {
       display: flex;
       flex-direction: row;

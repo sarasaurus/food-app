@@ -1,0 +1,475 @@
+/*mobile first*/
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Space+Grotesk:wght@400;500;700&display=swap');
+html {
+    font-size: 100%;
+  }
+  * { /*universal reset*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color:#222222;
+  }
+  body {
+    background-color: #ECE6E9;
+  }
+  /*responsive images*/
+  img {
+    max-width: 100%;
+    height:inherit;
+  }
+
+/**********pause**************/
+
+  /*typographic*/
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  h1 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.986rem;
+  }
+  
+  h2 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.728rem;
+  }
+  
+  h3 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.44rem;
+  }
+  h4 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.22rem;
+    margin: .3rem 0px;
+  }
+  h5 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.22rem;
+  }
+  h6 {
+  /*Your css here in rem. 1 rem=16px*/
+  }
+  p, a, input{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .special {
+    text-align: left;
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    font-family: 'oi', cursive;
+    font-weight: normal;
+    letter-spacing: .1rem;
+  }
+
+	.featured-headline {
+	font-family: 'oi', cursive;
+	font-weight: normal;
+	letter-spacing: .1rem;
+	}
+
+hr {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+/**********pause**************/
+
+  /* CSS modifiers */
+  /*presentational styles. Not required, use as needed*/
+  .author {/*styles the author name*/}
+  .date {/*styles the date*/}
+  .category {/*styles the category*/}
+  .caption {/*styles the caption*/}
+  .subhead {/*styles the subheadline*/}
+  .huge {/*size modifiers, as needed*/}
+  .tiny {/*size modifiers, as needed*/}
+  .light {/*light text on dark background, as needed*/}
+  .dark {/*dark text on light background, as needed*/}
+
+/**********pause**************/
+
+  /*structural*/
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .row {
+    align-items: center;
+    justify-content: center;
+      width:100%;
+      /* background-color: pink; */
+    display: flex;
+    flex-direction: column; /*column for mobile; will change to row for desktop*/
+  }
+  /*use the class of 'item' to organically subdivide into quarters thirds, halves, etc or use the explicitly defined quarters, thirds, halves, etc below But don't mix and match systems*/
+  
+  .item {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+      /* outline: thin red solid; */
+  }
+
+  .slider{
+    width:inherit;
+    flex: none;
+  flex-wrap:nowrap;
+    white-space:nowrap;
+  overflow-x:scroll;
+    
+  }
+  .featured {
+    padding: 3rem;
+    background-color: #E8E0C7;
+  }
+  .recipe_collection {
+    /* background-color: #E8E0C7; */
+  }
+  .article_collection {
+    padding: 0px 2rem;
+    background-color: #DCC3CF;
+    flex-direction: column;
+  }
+  .general_recipes {
+    background-color: #E8E0C7;
+  }
+  .icon_collection {
+    flex-direction: row;
+  }
+.ad {
+  margin: 1rem;
+  background-color: red;
+  height: 200px;
+  width: auto;
+ 
+}
+.weekly_recipe_topic {
+  padding: 3rem;
+}
+.weekly_recipe_topic > .item {
+  padding: 3rem;
+}
+  
+
+/**********pause**************/
+
+  /*quarter, third, half, etc width 100%*/
+  /*Flex Container Modifiers*/
+  .full, .half, .third, .two_thirds, .quarter, .fifth, .three_quarters, .two_fifths, .three_fifths, .four_fifths {
+    width: 100%;
+    /* outline: thin blue solid; */
+    display: flex;
+    /*centers all text*/
+    /* align-items: center;
+      justify-content: center;*/
+    flex-direction: column;
+    padding: .75rem;
+    align-items: center;
+  }
+  
+header {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+background-color: #B8CBBA;
+  }
+  header > .row {
+      align-items: center;
+  }
+
+
+nav .top{
+    display: flex;
+    flex-direction: column;  
+}
+nav > ul {
+    width:100%;
+}
+ul.top > li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+	
+    /* border:1px solid tomato; */
+}
+.top > form {
+    align-self: center;
+}
+
+
+form {
+  margin: .75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+input {
+  margin-right: .75rem;
+  padding: .3rem;
+}
+
+  footer {
+    padding: 2rem 3rem;
+    background: #B8CBBA;
+    text-align: center;
+    }
+ 
+  
+/**********pause**************/
+
+  /*modifiers*/
+  
+  .shadow {/*box shadow*/}
+  .rnd_crn {/*rounded corners*/}
+  .border_bottom {/* border bottom*/}
+  
+  /*vertical space*/
+  .v_space_sm {
+    margin: .75rem 0px;
+  }
+  .v_space_md {
+    margin: 3rem 0px;
+  }
+  .v_space_lg {
+    margin: 5rem 0px;
+  }
+  
+  /*card specific*/
+  .card {
+    width: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    margin: 0px 0px;
+    }
+    .card_text {
+    /* background-color:teal; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem; 
+    width:0;
+     min-width: 100%;
+    margin: 10px 0px;
+    }
+    .card_text > a {
+      font-weight: bold;
+    }
+    .card_rating {
+    /* background-color:coral; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px; 
+    }
+    .card_category {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: absolute;
+      left:.75rem;
+      top:.75rem;
+    }
+    .card_category_icon {
+      margin-right: .75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height:30px;
+      width: 30px;
+      background-color:orange;
+      border-radius: 100%;
+    }
+  .card_sm {
+    height: min-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_sm > img {
+    /*width: fit-content;*/
+    height: fit-content;
+  }
+
+  .card_sm > .card_text {
+    width: 100%;
+    min-width: revert;
+  }
+
+  .card_md {}
+  .card_lg {}
+
+  /*modifiers*/
+
+ .hr-border {
+  	border: 1px solid black;
+  	width: 80%;
+	margin-bottom: 4%;
+    margin-top: 2%;
+	}
+
+.padding-ten-percent {
+	padding-left: 10%;
+	padding-right: 10%;
+	}
+.read-more {
+	font-weight: bold;
+	font-size: 1.1875rem;
+	line-height: 1.5rem;
+	text-decoration-line: underline;
+	align-self: flex-end;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+/**********pause**************/
+
+  /*desktop*/
+  @media (min-width:1101px) {
+    html {
+      font-size: 100%;
+    }
+    header, footer{
+    display: flex;
+    height:min-content;
+    }
+    header {
+        flex-direction: column;
+    }
+    nav .top{
+        flex-direction: row;
+    }
+    nav > ul {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .top > form {
+        align-self: flex-end;
+    }
+	  
+    footer {
+        text-align: left;
+        flex-direction: row;
+    }
+    footer > .half, footer > .quarter {
+      text-align: left;
+      align-items: stretch;
+    }
+    .half > h4, .quarter > h4 {
+      text-align: left;
+    }
+    footer > ul {
+      margin-top: .75rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+	  
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+    }
+  .stack {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .recipe_collection > .stack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #general_recipes{
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card {
+    width: max-content;
+  }
+  .card_sm {
+    flex-direction: row;
+  }
+    .full {
+      width: 100%;
+      
+    }
+    .half {
+      width: 50%;
+    }
+    .third {
+      width: 33.33%;
+    }
+    .two_thirds {
+      width: 66.66%;
+    }
+    .quarter {
+      width: 25%;
+    }
+    .three_quarters {
+      width: 75%;
+    }
+    .fifth {
+      width: 20%;
+    }
+    .two_fifths {
+      width: 40%;
+    }
+    .three_fifths {
+      width: 60%;
+    }
+    .four_fifths {
+      width: 80%;
+    }
+  }
+  
+  
