@@ -30,7 +30,7 @@ html {
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.986rem;
+    font-size: 2.5rem;
   }
   
   h2 {
@@ -84,6 +84,7 @@ html {
 	font-family: 'oi', cursive;
 	font-weight: normal;
 	letter-spacing: .1rem;
+  max-width: inherit;
 	}
 
 hr {
@@ -134,6 +135,7 @@ hr {
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 1;
+    padding: .3rem;
       /* outline: thin red solid; */
   }
 
@@ -146,7 +148,6 @@ hr {
     
   }
   .featured {
-    padding: 3rem;
     background-color: #E8E0C7;
   }
   .recipe_collection {
@@ -170,11 +171,9 @@ hr {
   width: auto;
  
 }
-.weekly_recipe_topic {
-  padding: 3rem;
-}
+
 .weekly_recipe_topic > .item {
-  padding: 3rem;
+  padding: .5rem;
 }
 
 .article p{
@@ -214,26 +213,27 @@ background-color: #B8CBBA;
   }
 
 
-nav .top{
+header nav{
     display: flex;
     flex-direction: column;  
 }
-nav > ul {
+nav ul {
     width:100%;
 }
-ul.top > li {
+header nav li {
     text-align: center;
-    width: 100%;
     margin: 1rem;
 	
     /* border:1px solid tomato; */
 }
-.top > form {
+header form {
     align-self: center;
+    width: 80%;
 }
 
 
 form {
+  width: 100%;
   margin: .75rem;
   display: flex;
   flex-direction: row;
@@ -243,6 +243,7 @@ input {
   margin-right: .75rem;
   padding: .3rem;
 }
+
 
   footer {
     padding: 2rem 3rem;
@@ -272,7 +273,7 @@ input {
   
   /*card specific*/
   .card {
-    width: max-content;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -291,7 +292,7 @@ input {
      min-width: 100%;
     margin: 10px 0px;
     }
-    .card_text > a {
+    .card_text  a {
       font-weight: bold;
     }
     .card_rating {
@@ -333,18 +334,20 @@ input {
     flex-direction: column;
     align-items: center;
   }
-  .card_sm > img {
+  .card_sm  img {
     /*width: fit-content;*/
     height: fit-content;
   }
 
-  .card_sm > .card_text {
+  .card_sm .card_text {
     width: 100%;
     min-width: revert;
   }
 
+
   .card_md {}
   .card_lg {}
+
 
   /*modifiers*/
 
@@ -401,7 +404,9 @@ input {
     html {
       font-size: 100%;
     }
-	  
+	  h1{
+      font-size: 2.986rem;
+    }
 	  h2 {
     font-family: Space Grotesk;
     font-style: normal;
@@ -429,6 +434,12 @@ input {
     .top > form {
         align-self: flex-end;
     }
+    .weekly_recipe_topic, .featured {
+      padding: 3rem;
+    }
+  .weekly_recipe_topic > .item {
+    padding: 3rem;
+  }
 	  
     footer {
         text-align: left;
@@ -474,8 +485,10 @@ input {
     width: max-content;
   }
   .card_sm {
+    width: 33%;
     flex-direction: row;
   }
+ 
     .full {
       width: 100%;
       
