@@ -292,7 +292,7 @@ input {
      min-width: 100%;
     margin: 10px 0px;
     }
-    .card_text > a {
+    .card_text  a {
       font-weight: bold;
     }
     .card_rating {
@@ -334,15 +334,16 @@ input {
     flex-direction: column;
     align-items: center;
   }
-  .card_sm > img {
+  .card_sm  img {
     /*width: fit-content;*/
     height: fit-content;
   }
 
-  .card_sm > .card_text {
+  .card_sm .card_text {
     width: 100%;
     min-width: revert;
   }
+
 
   .card_md {}
   .card_lg {}
@@ -463,8 +464,10 @@ input {
     width: max-content;
   }
   .card_sm {
+    width: 33%;
     flex-direction: row;
   }
+ 
     .full {
       width: 100%;
       
