@@ -164,7 +164,7 @@ hr {
     background-color: #E8E0C7;
   }
   .icon_collection {
-    flex-direction: row;
+    flex-direction: column;
   }
 .ad {
   margin: 1rem;
@@ -239,13 +239,13 @@ form {
   margin: .75rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 input {
   margin-right: .75rem;
   padding: .3rem;
 }
-
 
   footer {
     padding: 2rem 3rem;
@@ -320,17 +320,19 @@ input {
       top:.75rem;
     }
     .card_category_icon {
-      margin-right: .75rem;
+      margin: .75rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height:30px;
       width: 30px;
-      background-color:orange;
       border-radius: 100%;
+      background-color: #ffa600;
     }
-
+.icon_collection .card_category_icon:hover {
+  cursor: pointer;
+}
     .icon_collection .card_category_icon {
       width: fit-content;
       padding: 0.3rem 1rem;
@@ -398,9 +400,7 @@ background-color: #5e6071;
 .yellow {
   background-color: #ffa600;
 } */
-.pink .yellow .purple .pink .orange .green {
-  background-color: #ffa600;
-}
+
 /*----Article Styling-----*/
 .article h1{
 }
@@ -456,8 +456,11 @@ background-color: #5e6071;
         justify-content: space-between;
         align-items: center;
     }
-  
-    .top > form {
+ header .three_quarters {
+   flex-direction: column;
+ }
+   header form {
+     width: fit-content;
         align-self: flex-end;
     }
     .weekly_recipe_topic, .featured {
@@ -471,15 +474,21 @@ background-color: #5e6071;
         text-align: left;
         flex-direction: row;
     }
-    footer > .half, footer > .quarter {
+    footer .half, footer .quarter {
       text-align: left;
       align-items: stretch;
     }
+
     .half > h4, .quarter > h4 {
       text-align: left;
     }
     footer > ul {
       margin-top: .75rem;
+    }
+    footer form {
+      margin: .75rem 0px;
+      width:fit-content;
+      align-self:flex-start;
     }
     .container {
       max-width: 1200px;
@@ -497,8 +506,13 @@ background-color: #5e6071;
     display: flex;
     flex-direction: column;
   }
- 
-  .recipe_collection > .stack{
+  .icon_collection {
+    flex-direction: row;
+  }
+  .icon_collection .card_category_icon:hover {
+    background-color: #ff5a00;
+  }
+  .recipe_collection  .stack{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -514,6 +528,7 @@ background-color: #5e6071;
     width: 33%;
     flex-direction: row;
   }
+
  
     .full {
       width: 100%;
