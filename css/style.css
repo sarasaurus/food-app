@@ -328,6 +328,12 @@ input {
       background-color:orange;
       border-radius: 100%;
     }
+
+    .icon_collection .card_category_icon {
+      width: fit-content;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+    }
   .card_sm {
     height: min-content;
     display:flex;
@@ -374,7 +380,25 @@ input {
 	font-weight: bold;
 }
 
-
+/* .pink {
+  
+  background-color: #e8005f;
+}
+.orange {
+  background-color: #ff5a00;
+}
+.green {
+ background-color: #007d4b;
+}
+.purple {
+background-color: #5e6071;
+}
+.yellow {
+  background-color: #ffa600;
+} */
+.pink .yellow .purple .pink .orange .green {
+  background-color: #ffa600;
+}
 /*----Article Styling-----*/
 .article h1{
 }
