@@ -177,12 +177,12 @@ hr {
   padding: 3rem;
 }
 
-.article_text {
+.article p{
 	font-family: Space Grotesk;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
-	 line-break: auto;
+	line-break: auto;
     line-height: 1.80647em;
 }
   
@@ -371,6 +371,27 @@ input {
 	font-weight: bold;
 }
 
+
+/*----Article Styling-----*/
+.article h1{
+}
+
+.article h1:hover {
+}
+
+.article p {
+	font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.80647em;
+}
+
+.article>h3 {
+    font-weight: bold;
+	align-self: flex-start;
+}
+  
 
 
 /**********pause**************/
