@@ -20,6 +20,10 @@ html {
     height:inherit;
   }
 
+#logo {
+	width: 25%;
+}
+
 /**********pause**************/
 
   /*typographic*/
