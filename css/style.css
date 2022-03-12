@@ -186,6 +186,11 @@ hr {
 	line-break: auto;
     line-height: 1.80647em;
 }
+
+.article > .v_space_md {
+	margin-top: 3rem 0px;
+	margin-bottom: .75rem 0px;
+}
   
 
 /**********pause**************/
