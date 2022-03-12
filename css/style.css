@@ -62,6 +62,7 @@ html {
     font-size: 1.22rem;
   }
   h6 {
+	  
   /*Your css here in rem. 1 rem=16px*/
   }
   p, a, input{
@@ -101,12 +102,68 @@ hr {
 /**********pause**************/
 
   /* CSS modifiers */
-  /*presentational styles. Not required, use as needed*/
-  .author {/*styles the author name*/}
-  .date {/*styles the date*/}
-  .category {/*styles the category*/}
+  .author {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1rem;
+		letter-spacing: 0.15em;
+		line-break: auto;
+		line-height: 1.33333em;
+}
+
+  .author_card {
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: .75rem;
+		letter-spacing: 0.15em;
+		line-break: auto;
+		line-height: 1.33333em;
+}
+  .date {
+		font-size: .875rem;
+}
+  .category {
+	  color: white;
+	  text-transform: uppercase;
+	  font-size: .75rem;
+	  letter-spacing: 0.15em;
+	  padding: 1rem;
+}
+
+  .category_card {
+	  color: white;
+	  text-transform: uppercase;
+	  font-size: .75rem;
+	  letter-spacing: 0.15em;
+	  padding: .5rem;
+}
+
   .caption {/*styles the caption*/}
-  .subhead {/*styles the subheadline*/}
+
+  .subhead {
+	  font-weight: 200;
+	  margin-bottom: 1.5rem;
+}
+
+.dark-grey {
+	  background-color: #5E6071;
+}
+
+.dark-red {
+	  background-color: #C41600;
+}
+
+.hot-pink{
+	background-color: #E8005F;
+}
+
+.orange {
+	background-color: #FF5A00;
+}
+
+.green {
+	background-color: #007D4B;
+}
   .huge {/*size modifiers, as needed*/}
   .tiny {/*size modifiers, as needed*/}
   .light {/*light text on dark background, as needed*/}
@@ -160,6 +217,12 @@ hr {
     background-color: #DCC3CF;
     flex-direction: column;
   }
+
+.article_collection > h4 {
+  align-self: flex-start;
+  }
+
+
   .general_recipes {
     background-color: #E8E0C7;
   }
@@ -185,6 +248,11 @@ hr {
     font-size: 1rem;
 	line-break: auto;
     line-height: 1.80647em;
+}
+
+.article > .v_space_md {
+	margin-top: 3rem 0px;
+	margin-bottom: .75rem 0px;
 }
   
 
@@ -287,7 +355,7 @@ input {
     /* background-color:teal; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: .3rem; 
     width:0;
@@ -368,10 +436,16 @@ input {
     margin-top: 2%;
 	}
 
+.padding-five-percent {
+	padding-left: 5%;
+	padding-right: 5%;
+	}
+
 .padding-ten-percent {
 	padding-left: 10%;
 	padding-right: 10%;
 	}
+
 .read-more {
 	font-weight: bold;
 	font-size: 1.1875rem;
@@ -419,6 +493,13 @@ background-color: #5e6071;
 .article>h3 {
     font-weight: bold;
 	align-self: flex-start;
+}
+
+.article a {
+	color: inherit;
+	text-transform: inherit;
+	font-weight: inherit;
+	font-size: inherit;
 }
   
 
