@@ -20,7 +20,9 @@ html {
     height:inherit;
   }
 
-
+.clickable {
+  cursor: pointer;
+}
 
 /**********pause**************/
 
@@ -274,7 +276,7 @@ hr {
   }
   
 header {
-  padding: .75px 1.5rem;
+  padding: .75px .75rem;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
@@ -316,25 +318,30 @@ header form {
     align-self: center;
 }
 .hamburger {
+  position: relative;
+  background-color: transparent;
   align-self: flex-start;
   border: none;
   margin: .75rem;
-  width:40px;
-  height:40px;
-  background-image: url(../img/Asset\ 9.png);
-  background-position: center;
 }
+
 nav .nav-active {
   visibility: visible;
 }
-/* .active {
-  visibility: visible;
-  background-color: #E8005F;
+.fa-navicon {
+  position: absolute;
 }
 .fa-close {
+  position: absolute;
   visibility: hidden;
-} */
-
+} 
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+ 
+}
 form {
   justify-content: center;
   justify-self: center;

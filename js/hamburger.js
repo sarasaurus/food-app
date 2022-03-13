@@ -23,13 +23,17 @@ const navSlide = () => {
 }
 //navSlide();
 function basicBurger (){
-  let hamburger = document.querySelector(".hamburger");
+	let open =document.querySelector(".fa-navicon");
+	let close = document.querySelector(".fa-close");
+  	let hamburger = document.querySelector(".hamburger");
 	let nav = document.querySelector(".top-nav");
 	//const navLinks = document.querySelectorAll(".navlinks li");
   hamburger.addEventListener("click", () => {
 	//Toggle Nav//
     console.log(`nav links are: ${nav}`)
 		nav.classList.toggle("nav-active");
+		close.classList.toggle("show");
+		open.classList.toggle("hide");
         hamburger.classList.toggle("active");
     //congrats//
   
