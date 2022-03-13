@@ -1,4 +1,4 @@
-const card = document.querySelectorAll(".card");
+const card = document.querySelectorAll(".card, .card_sm");
 
 const allCards = Array.from(card);
 //we are using 'a' here for simplicity but ideally you should put a class like 'clickable' on every clicable element inside card(a, button) and use that in query selector
