@@ -1,8 +1,8 @@
 //Toggle animation for hamburger menu.//
 const navSlide = () => {
 	const hamburger = document.querySelector(".hamburger");
-	const nav = document.querySelector(".navlinks");
-	const navLinks = document.querySelectorAll(".navlinks li");
+	const nav = document.querySelectorAll(".top");
+	const navLinks = document.querySelectorAll(".top li");
   
 	hamburger.addEventListener("click", () => {
 	//Toggle Nav//
@@ -24,13 +24,15 @@ const navSlide = () => {
 //navSlide();
 function basicBurger (){
   let hamburger = document.querySelector(".hamburger");
-	let nav = document.querySelector(".navlinks");
+	let nav = document.querySelector(".top-nav");
 	//const navLinks = document.querySelectorAll(".navlinks li");
   hamburger.addEventListener("click", () => {
 	//Toggle Nav//
+    console.log(`nav links are: ${nav}`)
 		nav.classList.toggle("nav-active");
+        hamburger.classList.toggle("active");
     //congrats//
-    console.log("you did it!")
+  
   });
   console.log("the listener has been added")
 }
