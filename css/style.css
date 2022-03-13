@@ -142,6 +142,7 @@ hr {
 	  padding: .5rem;
 }
 .category_card a {
+  color:white;
   text-decoration: none;
 }
 .category_card:hover {
