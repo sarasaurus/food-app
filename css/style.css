@@ -319,9 +319,10 @@ header form {
   align-self: flex-start;
   border: none;
   margin: .75rem;
-  width:30px;
-  height:30px;
-  background-color: #ffa600;
+  width:40px;
+  height:40px;
+  background-image: url(../img/Asset\ 9.png);
+  background-position: center;
 }
 nav .nav-active {
   visibility: visible;
