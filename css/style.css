@@ -112,7 +112,7 @@ hr {
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 1rem;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.08em;
 		line-break: auto;
 		line-height: 1.33333em;
 }
@@ -121,7 +121,7 @@ hr {
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: .75rem;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.08em;
 		line-break: auto;
 		line-height: 1.33333em;
 }
@@ -263,11 +263,7 @@ font-weight: 900;
     line-height: 1.80647em;
 }
 
-.article .v_space_md {
-	margin-top: 3rem 0px;
-	margin-bottom: .75rem 0px;
-}
-  
+
 
 /**********pause**************/
 
@@ -381,7 +377,7 @@ input {
 
   /*modifiers*/
   
-  .shadow {/*box shadow*/}
+  .shadow {}
   .rnd_crn {/*rounded corners*/}
   .border_bottom {/* border bottom*/}
   
@@ -500,6 +496,14 @@ input {
   	width: 80%;
 	margin-bottom: 4%;
     margin-top: 2%;
+	}
+
+ .hr-border-display-none {
+  	border: 1px solid black;
+  	width: 80%;
+	margin-bottom: 4%;
+    margin-top: 2%;
+	 display: block;
 	}
 
 .padding-five-percent {
@@ -676,6 +680,15 @@ background-color: #5e6071;
     width: 33%;
     flex-direction: row;
   }
+
+	  .hr-border-display-none {
+  	border: 1px solid black;
+  	width: 80%;
+	margin-bottom: 4%;
+    margin-top: 2%;
+	display: none;
+	}
+
 
  
     .full {
