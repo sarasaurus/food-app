@@ -2,16 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oi&family=Space+Grotesk:wght@400;500;700&display=swap');
 html {
     font-size: 100%;
+    margin: 0;
   }
   * { /*universal reset*/
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     color:#222222;
   }
   body {
+    margin: 0;
+    width: 100%;
     background-color: #ECE6E9;
   }
   /*responsive images*/
@@ -148,6 +151,9 @@ hr {
 .category_card:hover {
 font-weight: 900;
 }
+.featured .category_card {
+  padding: .1rem .3rem;
+}
   .caption {/*styles the caption*/}
 
   .subhead {
@@ -205,7 +211,6 @@ font-weight: 900;
     flex-grow: 1;
     flex-shrink: 1;
     padding: .3rem;
-      /* outline: thin red solid; */
   }
 
   .slider{
@@ -236,9 +241,7 @@ font-weight: 900;
   .general_recipes {
     background-color: #E8E0C7;
   }
-  .icon_collection {
-    flex-direction: column;
-  }
+
 .ad {
   margin: 1rem;
   background-color: red;
@@ -284,15 +287,17 @@ font-weight: 900;
   
 header {
   padding: .75px .75rem;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-background-color: #B8CBBA;
-  }
-  header > .row {
- 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #B8CBBA;
+}
+header .logo {
+  align-self: center;
+}
+header > .row {
     align-items: center;
-  }
+}
 
 header nav {
   width: 100%;
@@ -300,6 +305,37 @@ header nav {
   display: flex;
   direction: column;
 }
+nav ul {
+  width:100%;
+}
+header nav li {
+  text-align: center;
+  margin: 1rem;
+
+  /* border:1px solid tomato; */
+}
+
+
+/*hamburger menu styles*/
+.hamburger {
+  width: 23px;
+  height: 26px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  align-self: flex-start;
+}
+.fa-navicon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fa-close {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
+} 
 .top-nav{
   width: 120%;
   top:0px;
@@ -310,60 +346,29 @@ header nav {
     visibility: hidden; 
     position: absolute;
 }
-
-nav ul {
-    width:100%;
-}
-header nav li {
-    text-align: center;
-    margin: 1rem;
-	
-    /* border:1px solid tomato; */
-}
-header form {
-    /* width: 80%; */
-    align-self: center;
-}
-.hamburger {
-  position: relative;
-  background-color: transparent;
-  align-self: flex-start;
-  border: none;
-  margin: .75rem;
-}
-
 nav .nav-active {
   visibility: visible;
 }
-.fa-navicon {
-  position: absolute;
-}
-.fa-close {
-  position: absolute;
-  visibility: hidden;
-} 
 .show {
   visibility: visible;
 }
 .hide {
   visibility: hidden;
- 
 }
+/*search bar*/
 form {
   justify-content: center;
   justify-self: center;
-  width: 100%;
+  width: fit-content;
   margin: .75rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 input {
   margin-right: .75rem;
   padding: .3rem;
 }
-
   footer {
     padding: 2rem 3rem;
     background: #B8CBBA;
@@ -436,8 +441,13 @@ input {
       left:.75rem;
       top:.75rem;
     }
+    .icon_collection {
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     .card_category_icon {
-      margin: .75rem;
+      margin-right: .75rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -447,14 +457,19 @@ input {
       border-radius: 100%;
       background-color: #ffa600;
     }
-  
-.icon_collection .card_category_icon:hover {
-  cursor: pointer;
-}
+    .icon_collection:last-child {
+      margin-right: 0px;
+    }
+    /*styling category labels when they are not inside a card*/  
+    .icon_collection .card_category_icon:hover {
+      background-color: #ff5a00;
+      cursor: pointer;
+    }
     .icon_collection .card_category_icon {
-      width: fit-content;
-      padding: 0.3rem 1rem;
-      border-radius: 30px;
+          width: 90px;
+          padding: 0.3rem 1rem;
+          border-radius: 30px;
+          margin-bottom: .75rem;
     }
   .card_sm {
     height: min-content;
@@ -576,7 +591,7 @@ background-color: #5e6071;
     }
     header {
       align-items: flex-start;
-        flex-direction: column;
+      flex-direction: column;
     }
     nav > ul {
         width:100%;
@@ -585,22 +600,21 @@ background-color: #5e6071;
         justify-content: space-between;
         align-items: center;
     }
-header > .row {
-  justify-content: space-between;
-}
- header .three_quarters {
-   flex-direction: column;
- }
-   header form {
-     align-self: flex-start;
-     width: fit-content;
+    header > .row {
+      justify-content: space-between;
+    }
+    header .three_quarters {
+      flex-direction: column;
+    }
+    header form {
+     align-self: flex-end;
     }
     .weekly_recipe_topic, .featured {
       padding: 3rem;
     }
-  .weekly_recipe_topic > .item {
-    padding: 3rem;
-  }
+    .weekly_recipe_topic > .item {
+      padding: 3rem;
+    }
 	  
     footer {
         text-align: left;
@@ -638,12 +652,13 @@ header > .row {
     display: flex;
     flex-direction: column;
   }
-  .icon_collection {
+  /* .icon_collection {
     flex-direction: row;
-  }
-  .icon_collection .card_category_icon:hover {
-    background-color: #ff5a00;
-  }
+    flex-wrap: wrap;
+  } */
+  /* .icon_collection .card_category_icon {
+    margin-bottom: 0;
+  } */
   .recipe_collection  .stack{
     width: 100%;
     display: flex;
