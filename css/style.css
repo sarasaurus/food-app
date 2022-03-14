@@ -12,6 +12,7 @@ html {
     color:#222222;
   }
   body {
+    width: 100%;
     background-color: #ECE6E9;
   }
   /*responsive images*/
@@ -438,7 +439,7 @@ input {
       top:.75rem;
     }
     .card_category_icon {
-      margin: .75rem;
+      margin-right: .75rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -448,14 +449,18 @@ input {
       border-radius: 100%;
       background-color: #ffa600;
     }
-  
-.icon_collection .card_category_icon:hover {
-  cursor: pointer;
-}
+    .icon_collection:last-child {
+      margin-right: 0px;
+    }
+    /*styling category labels when they are not inside a card*/  
+    .icon_collection .card_category_icon:hover {
+      background-color: #ff5a00;
+      cursor: pointer;
+    }
     .icon_collection .card_category_icon {
-      width: fit-content;
-      padding: 0.3rem 1rem;
-      border-radius: 30px;
+          width: 90px;
+          padding: 0.3rem 1rem;
+          border-radius: 30px;
     }
   .card_sm {
     height: min-content;
@@ -640,9 +645,6 @@ background-color: #5e6071;
   }
   .icon_collection {
     flex-direction: row;
-  }
-  .icon_collection .card_category_icon:hover {
-    background-color: #ff5a00;
   }
   .recipe_collection  .stack{
     width: 100%;
