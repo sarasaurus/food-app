@@ -248,11 +248,17 @@ font-weight: 900;
   }
 
 .ad {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin: 1rem;
-  background-color: red;
   height: 200px;
-  width: auto;
+  width: 100%;
  
+}
+.red{
+  background-color: red;
 }
 
 .weekly_recipe_topic > .item {
@@ -533,8 +539,8 @@ input {
 	font-weight: bold;
 }
 
-/* 
-.pink {
+/* category colors*/
+/* .pink {
   
   background-color: #e8005f;
 }
