@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oi&family=Space+Grotesk:wght@400;500;700&display=swap');
 html {
     font-size: 100%;
+    margin: 0;
   }
   * { /*universal reset*/
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     color:#222222;
   }
   body {
+    margin: 0;
     width: 100%;
     background-color: #ECE6E9;
   }
