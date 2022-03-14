@@ -205,7 +205,6 @@ font-weight: 900;
     flex-grow: 1;
     flex-shrink: 1;
     padding: .3rem;
-      /* outline: thin red solid; */
   }
 
   .slider{
@@ -284,15 +283,17 @@ font-weight: 900;
   
 header {
   padding: .75px .75rem;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-background-color: #B8CBBA;
-  }
-  header > .row {
- 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #B8CBBA;
+}
+header .logo {
+  align-self: center;
+}
+header > .row {
     align-items: center;
-  }
+}
 
 header nav {
   width: 100%;
@@ -300,6 +301,37 @@ header nav {
   display: flex;
   direction: column;
 }
+nav ul {
+  width:100%;
+}
+header nav li {
+  text-align: center;
+  margin: 1rem;
+
+  /* border:1px solid tomato; */
+}
+
+
+/*hamburger menu styles*/
+.hamburger {
+  width: 23px;
+  height: 26px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  align-self: flex-start;
+}
+.fa-navicon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fa-close {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
+} 
 .top-nav{
   width: 120%;
   top:0px;
@@ -310,60 +342,29 @@ header nav {
     visibility: hidden; 
     position: absolute;
 }
-
-nav ul {
-    width:100%;
-}
-header nav li {
-    text-align: center;
-    margin: 1rem;
-	
-    /* border:1px solid tomato; */
-}
-header form {
-    /* width: 80%; */
-    align-self: center;
-}
-.hamburger {
-  position: relative;
-  background-color: transparent;
-  align-self: flex-start;
-  border: none;
-  margin: .75rem;
-}
-
 nav .nav-active {
   visibility: visible;
 }
-.fa-navicon {
-  position: absolute;
-}
-.fa-close {
-  position: absolute;
-  visibility: hidden;
-} 
 .show {
   visibility: visible;
 }
 .hide {
   visibility: hidden;
- 
 }
+/*search bar*/
 form {
   justify-content: center;
   justify-self: center;
-  width: 100%;
+  width: fit-content;
   margin: .75rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 input {
   margin-right: .75rem;
   padding: .3rem;
 }
-
   footer {
     padding: 2rem 3rem;
     background: #B8CBBA;
@@ -576,7 +577,7 @@ background-color: #5e6071;
     }
     header {
       align-items: flex-start;
-        flex-direction: column;
+      flex-direction: column;
     }
     nav > ul {
         width:100%;
@@ -585,22 +586,21 @@ background-color: #5e6071;
         justify-content: space-between;
         align-items: center;
     }
-header > .row {
-  justify-content: space-between;
-}
- header .three_quarters {
-   flex-direction: column;
- }
-   header form {
-     align-self: flex-start;
-     width: fit-content;
+    header > .row {
+      justify-content: space-between;
+    }
+    header .three_quarters {
+      flex-direction: column;
+    }
+    header form {
+     align-self: flex-end;
     }
     .weekly_recipe_topic, .featured {
       padding: 3rem;
     }
-  .weekly_recipe_topic > .item {
-    padding: 3rem;
-  }
+    .weekly_recipe_topic > .item {
+      padding: 3rem;
+    }
 	  
     footer {
         text-align: left;
