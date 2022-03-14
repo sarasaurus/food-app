@@ -151,6 +151,9 @@ hr {
 .category_card:hover {
 font-weight: 900;
 }
+.featured .category_card {
+  padding: .1rem .3rem;
+}
   .caption {/*styles the caption*/}
 
   .subhead {
@@ -238,9 +241,7 @@ font-weight: 900;
   .general_recipes {
     background-color: #E8E0C7;
   }
-  .icon_collection {
-    flex-direction: column;
-  }
+
 .ad {
   margin: 1rem;
   background-color: red;
@@ -440,6 +441,11 @@ input {
       left:.75rem;
       top:.75rem;
     }
+    .icon_collection {
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     .card_category_icon {
       margin-right: .75rem;
       display: flex;
@@ -463,6 +469,7 @@ input {
           width: 90px;
           padding: 0.3rem 1rem;
           border-radius: 30px;
+          margin-bottom: .75rem;
     }
   .card_sm {
     height: min-content;
@@ -645,9 +652,13 @@ background-color: #5e6071;
     display: flex;
     flex-direction: column;
   }
-  .icon_collection {
+  /* .icon_collection {
     flex-direction: row;
-  }
+    flex-wrap: wrap;
+  } */
+  /* .icon_collection .card_category_icon {
+    margin-bottom: 0;
+  } */
   .recipe_collection  .stack{
     width: 100%;
     display: flex;
