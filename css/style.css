@@ -161,6 +161,7 @@ font-weight: 900;
 	  margin-bottom: 1.5rem;
 }
 
+
 .dark-grey {
 	  background-color: #5E6071;
 }
@@ -179,6 +180,10 @@ font-weight: 900;
 
 .green {
 	background-color: #007D4B;
+}
+
+.light-pink {
+	background-color: #DCC3CF;
 }
   .huge {/*size modifiers, as needed*/}
   .tiny {/*size modifiers, as needed*/}
@@ -528,10 +533,11 @@ input {
 	font-weight: bold;
 }
 
-/* .pink {
+.pink {
   
   background-color: #e8005f;
 }
+/* 
 .orange {
   background-color: #ff5a00;
 }
